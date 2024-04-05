@@ -7,9 +7,32 @@
   <link rel="stylesheet" href="./assets/css/form.css">
   <title>Blog</title>
 </head>
+
+  <header>
+    <h1>Code.Blog</h1>
+      <nav><button type="button" id="modeButton" class="modeButton">Light Mode/Dark Mode</button></nav>
+  </header>
+
 <body>
-  
+
+  <form>
+    <h2>What's on your mind?</h2>
+    <label for="username" id="labelUsername" required>Username:</label><br>
+    <input type="text" id="username"><br>
+    <label for="blogTitle" id="labelBlogTitle" required>Blog Title</label><br>
+    <input type="text" id="blogTitle" class="blogTitle"><br>
+    <label for="blogContent" id="labelBlogContent" required>Blog Content</label><br>
+    <!-- Textarea for the post section for larger scale and better format -->
+    <textarea id="blogContent" class="blogContent" cols="30" rows="10"></textarea><br>
+    <br><button type="button">Submit!</button>
+  </form>
+
 </body>
+<br>
+<footer>
+  <a href="https://j5imonson.github.io/portfolio/">Made with ❤️ by Joel</a>
+</footer>
+
 <script src="./assets/js/blog.js"></script>
 <script src="./assets/js/form.js"></script>
 </html>
