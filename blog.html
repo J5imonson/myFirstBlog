@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,30 @@
   <link rel="stylesheet" href="./assets/css/blog.css">
   <title>Index</title>
 </head>
+
 <body>
-<!-- blog title, light/dark button, back button -->
-<header>
-  <h1>Code.Blog</h1>
-    <nav><button type="button" id="modeButton" class="modeButton" onclick="modeSwitch()">Light Mode/Dark Mode</button></nav><br>
-    <nav><button type="button" id="backButton" class="backButton">&#x2190; Back</button></nav>
-</header>
-<!-- posted content will display here -->
+  <!-- blog title, light/dark button, back button -->
+  <header>
+    <h1>Code.Blog</h1>
+    <nav><button type="button" id="modeButton" class="modeButton" onclick="modeSwitch()">Light Mode/Dark Mode</button>
+    </nav><br>
+    <!-- back button -->
+    <a href="./index.html">
+      <nav><button type="button" id="backButton" class="backButton">&#x2190; Back</button></nav>
+    </a>
+  </header>
+  <!-- posted content will display here -->
 
-<h2>Posts</h2>  
+  <h2>Posts</h2>
 
-<!-- footer with portfolio link -->
-<footer>
-  <a href="https://j5imonson.github.io/portfolio/">Made with ❤️ by Joel</a>
-</footer>
+  <!-- footer with portfolio link -->
+  <footer>
+    <a href="https://j5imonson.github.io/portfolio/">Made with ❤️ by Joel</a>
+  </footer>
 
 </body>
-<script src="./assets/js/logic.js"></script>
+
 <script src="./assets/js/blog.js"></script>
+<script src="./assets/js/logic.js"></script>
+
 </html>

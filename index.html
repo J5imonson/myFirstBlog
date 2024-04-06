@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,14 @@
 </head>
 
 <body>
-<!-- Blog title and light/dark button -->
+  <!-- Blog title and light/dark button -->
   <header>
     <h1>Code.Blog</h1>
-      <nav><button type="button" id="modeButton" class="modeButton" onclick="modeSwitch()">Light Mode/Dark Mode</button></nav>
+    <nav><button type="button" id="modeButton" class="modeButton" onclick="modeSwitch()">Light Mode/Dark Mode</button>
+    </nav>
   </header>
 
-
-<!-- blog post submission form -->
+  <!-- blog post submission form -->
   <form>
     <h2>What's on your mind?</h2>
     <label for="username" id="labelUsername" required>Username:</label><br>
@@ -26,21 +27,18 @@
     <label for="blogContent" id="labelBlogContent" required>Blog Content</label><br>
     <!-- Textarea for the post section for larger scale and better format -->
     <textarea id="blogContent" class="blogContent" cols="30" rows="10"></textarea><br>
-    <!-- <br><button type="button">Submit!</button> -->
-  </form>
-  <form method="post" action="file:///C:/Users/joeto/Documents/bootcamp/homework/myFirstBlog/index.html">
-    <input type="submit" class="submitButton">
+    <!-- submit button -->
+    <button id="submit">Submit</button>
   </form>
 
-
-<br>
-<!-- footer with portfolio link -->
-<footer>
-  <a href="https://j5imonson.github.io/portfolio/">Made with ❤️ by Joel</a>
-</footer>
+  <br>
+  <!-- footer with portfolio link -->
+  <footer>
+    <a href="https://j5imonson.github.io/portfolio/">Made with ❤️ by Joel</a>
+  </footer>
 
 </body>
-<script src="./assets/js/logic.js"></script>
-<script src="./assets/js/blog.js"></script>
 <script src="./assets/js/form.js"></script>
+<script src="./assets/js/logic.js"></script>
+
 </html>
