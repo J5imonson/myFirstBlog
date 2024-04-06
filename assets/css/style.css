@@ -1,0 +1,16 @@
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 5px;
+  background-color: rgb(246, 239, 231);
+  color: rgb(40, 40, 40);
+}
+
+.darkMode {
+  background-color: rgb(57, 55, 55);
+  color: rgb(216, 216, 214);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
