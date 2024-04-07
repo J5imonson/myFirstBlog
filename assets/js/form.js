@@ -4,20 +4,21 @@ const blogContent = document.getElementById('blogContent');
 const submit = document.getElementById('submit');
 const form = document.querySelector('form');
 const modeButton = document.querySelector('#modeButton');
+const blogPost =(localStorage.getItem('formContent'));
+const post =  JSON.parse(blogPost) || [];
 
-// submits user input to local storage
-form.addEventListener('submit', function(event) {
+function submitForm(event) {
   event.preventDefault();
-
-  let formContent ={
+  const formContent = {
     username: username.value,
     blogTitle: blogTitle.value,
     blogContent: blogContent.value.trim(),
   }
-  localStorage.setItem('formContent', JSON.stringify(formContent));
-  window.location.href = "blog.html";
-});
+  post.push(formContent);
+  localStorage.setItem('formContent', JSON.stringify(post));
+  document.location.href = "blog.html";
+}
 
-
-
-
+// submits user input to local storage
+form.addEventListener('submit', submitForm);
+// event.preventDefault();
