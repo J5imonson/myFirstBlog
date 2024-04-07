@@ -20,13 +20,13 @@
   <!-- blog post submission form -->
   <form>
     <h2>What's on your mind?</h2>
-    <label for="username" id="labelUsername" required>Username:</label><br>
-    <input type="text" id="username"><br>
-    <label for="blogTitle" id="labelBlogTitle" required>Blog Title</label><br>
-    <input type="text" id="blogTitle" class="blogTitle"><br>
-    <label for="blogContent" id="labelBlogContent" required>Blog Content</label><br>
+    <label for="username" id="labelUsername">Username:</label><br>
+    <input type="text" id="username" required><br>
+    <label for="blogTitle" id="labelBlogTitle">Blog Title</label><br>
+    <input type="text" id="blogTitle" class="blogTitle" required><br>
+    <label for="blogContent" id="labelBlogContent">Blog Content</label><br>
     <!-- Textarea for the post section for larger scale and better format -->
-    <textarea id="blogContent" class="blogContent" cols="30" rows="10"></textarea><br>
+    <textarea id="blogContent" class="blogContent" cols="30" rows="10" required></textarea><br>
     <!-- submit button -->
     <button id="submit">Submit</button>
   </form>
