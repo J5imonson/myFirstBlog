@@ -4,4 +4,6 @@
 
 https://j5imonson.github.io/myFirstBlog/
 
+https://github.com/J5imonson/myFirstBlog
+
 ![alt text](myFirstBlog.png)
