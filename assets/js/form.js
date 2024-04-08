@@ -4,8 +4,8 @@ const blogContent = document.getElementById('blogContent');
 const submit = document.getElementById('submit');
 const form = document.querySelector('form');
 const modeButton = document.querySelector('#modeButton');
-const blogPost =(localStorage.getItem('formContent'));
-const post =  JSON.parse(blogPost) || [];
+const blogPost = (localStorage.getItem('formContent'));
+const post = JSON.parse(blogPost) || [];
 
 function submitForm(event) {
   event.preventDefault();
